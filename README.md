@@ -67,6 +67,5 @@ Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩�
 
 - Reach 30 problems by end of the month ✅
 - Add unit tests for each Java file 📦
-- Include optional Kotlin versions 🔀
 
 ---
