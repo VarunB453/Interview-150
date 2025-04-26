@@ -1,13 +1,13 @@
 class Solution {
-  public int lengthOfLastWord(String s) {
-    int i = s.length() - 1;
+  public String longestCommonPrefix(String[] strs) {
+    if (strs.length == 0)
+      return "";
 
-    while (i >= 0 && s.charAt(i) == ' ')
-      --i;
-    int lastIndex = i;
-    while (i >= 0 && s.charAt(i) != ' ')
-      --i;
+    for (int i = 0; i < strs[0].length(); ++i)
+      for (int j = 1; j < strs.length; ++j)
+        if (i == strs[j].length() || strs[j].charAt(i) != strs[0].charAt(i))
+          return strs[0].substring(0, i);
 
-    return lastIndex - i;
+    return strs[0];
   }
 }

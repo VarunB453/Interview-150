@@ -1,98 +1,94 @@
-# 58. Length of Last Word | Java Solution
+# 14. Longest Common Prefix | Java Solution
 
-[![LeetCode Problem](https://img.shields.io/badge/LeetCode-58.%20Length%20of%20Last%20Word-blue)](https://leetcode.com/problems/length-of-last-word/)
+[![LeetCode Problem](https://img.shields.io/badge/LeetCode-14.%20Longest%20Common%20Prefix-blue)](https://leetcode.com/problems/longest-common-prefix/)
 [![Java](https://img.shields.io/badge/Language-Java-orange)](https://www.java.com/)
 [![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen)]()
 
 ---
 
-## 🧩 Problem Statement
+## 🧩 Problem Statement  
 
-Given a string `s` consisting of **words** and **spaces**, return the **length of the last word** in the string.
+Write a function to find the **longest common prefix** string amongst an array of strings.
 
-A **word** is defined as a maximal substring consisting of **non-space characters only**.
+If there is no common prefix, return an empty string `""`.
 
 ---
 
-## 🧠 Examples
+## 🧠 Examples  
 
-### Example 1:
+### Example 1  
 
-**Input:**  
-`s = "Hello World"`  
-**Output:**  
-`5`  
+| Input | Output |
+|-------|--------|
+| `strs = ["flower","flow","flight"]` | `"fl"` |
+
 **Explanation:**  
-The last word is `"World"` which has a length of 5.
+The longest common prefix among all strings is `"fl"`.
 
 ---
 
-### Example 2:
+### Example 2  
 
-**Input:**  
-`s = "   fly me   to   the moon  "`  
-**Output:**  
-`4`  
+| Input | Output |
+|-------|--------|
+| `strs = ["dog","racecar","car"]` | `""` |
+
 **Explanation:**  
-The last word is `"moon"` which has a length of 4.
+There is no common prefix among the input strings, so return an empty string.
 
 ---
 
-### Example 3:
+## ✅ Constraints  
 
-**Input:**  
-`s = "luffy is still joyboy"`  
-**Output:**  
-`6`  
-**Explanation:**  
-The last word is `"joyboy"` which has a length of 6.
+- `1 <= strs.length <= 200`  
+- `0 <= strs[i].length <= 200`  
+- `strs[i]` consists of only lowercase English letters.
 
 ---
 
-## ✅ Constraints
+## 💡 Approach  
 
-- `1 <= s.length <= 10⁴`  
-- `s` consists of only English letters and spaces `' '`.  
-- There will be at least **one** word in `s`.
+### 🔄 Vertical Scanning  
 
----
-
-## 💡 Approach
-
-We iterate **from the end of the string backwards**, skipping trailing spaces, and then count the length of the last word character by character until we hit a space or the start of the string.
+1. Iterate over the characters of the first string.
+2. For each character position, check if all strings have the same character at that position.
+3. If a mismatch is found, return the substring up to that point.
 
 ---
 
-## 🔍 Complexity Analysis
+## 🔍 Complexity Analysis  
 
-| Complexity | Value      |
-|------------|------------|
-| Time       | `O(n)`     |
-| Space      | `O(1)`     |
-
-- We scan the string once from the back.  
-- No additional space is used beyond variables.
+|                | Value |
+|----------------|-------|
+| **Time**       | `O(m * n)` — Where `m` is the length of the shortest string, and `n` is the number of strings |
+| **Space**      | `O(1)` — No extra space needed |
 
 ---
 
-## 🧪 Test Cases
+## 🧪 Quick Test  
 
 ```java
 public static void main(String[] args) {
     Solution sol = new Solution();
-
-    System.out.println(sol.lengthOfLastWord("Hello World"));              // Output: 5
-    System.out.println(sol.lengthOfLastWord("   fly me   to   the moon  ")); // Output: 4
-    System.out.println(sol.lengthOfLastWord("luffy is still joyboy"));   // Output: 6
-    System.out.println(sol.lengthOfLastWord("a"));                       // Output: 1
+    System.out.println(sol.longestCommonPrefix(new String[]{"flower","flow","flight"})); // "fl"
+    System.out.println(sol.longestCommonPrefix(new String[]{"dog","racecar","car"}));     // ""
 }
 ```
 
 ---
 
-## ✨ Notes
+## ✨ Possible Improvements  
 
-- Works even if the string has trailing spaces.
-- A clean linear scan from the end avoids any need to split the string or use extra space.
+- Use binary search to find the common prefix length more efficiently (`O(n * log m)`).
+- Trie (Prefix Tree) solution can be considered if there are many strings and repeated prefixes.
+
+---
+
+## 📚 Topics & Hint  
+
+**Topics:** String • Trie  
+
+**Hint:**  
+> Compare characters one by one vertically across all strings.
 
 ---
