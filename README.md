@@ -18,7 +18,7 @@
 
 ✅ **Solved:** **18/150** (12%)  
 ⏳ **Remaining:** **132/150**  
-📅 **Current Streak:** **16 days**
+📅 **Current Streak:** **18 days**
 
 ---
 
