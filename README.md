@@ -16,9 +16,9 @@
 
 ## 📊 Progress Tracker
 
-✅ **Solved:** **19/150** (13%)  
-⏳ **Remaining:** **131/150**  
-📅 **Current Streak:** **19 days**
+✅ **Solved:** **22/150** (15%)  
+⏳ **Remaining:** **128/150**  
+📅 **Current Streak:** **22 days**
 
 ---
 
@@ -42,16 +42,19 @@
 | 14  | [134. Gas Station](https://leetcode.com/problems/gas-station/) | Medium | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20014/Solution.java) | Greedy reset when tank < 0 | O(n) / O(1) |
 | 15  | [135. Candy](https://leetcode.com/problems/candy/) | Hard | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20015/Solution.java) | Two‑pass greedy on ratings | O(n) / O(n) |
 | 16  | [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Hard | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20016/Solution.java) | Prefix‑suffix max arrays (or two‑pointer) | O(n) / O(n) |
-| 17  | [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | Medium | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20017/Solution.java) | Greedy subtract + symbol map | O(1) / O(1) |
-| 18  | [58. Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | Easy | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20018/Solution.java) | Reverse scan + skip spaces | O(n) / O(1) |
-| 19  | [151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | Medium | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20019/Solution.java) | Two-pointer reverse traversal + trimming | O(n) / O(n) |
+| 17  | [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | Easy | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20017/Solution.java) | Right-to-left subtraction logic | O(n) / O(1) |
+| 18  | [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | Medium | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20018/Solution.java) | Greedy subtract + symbol map | O(1) / O(1) |
+| 19  | [58. Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | Easy | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20019/Solution.java) | Reverse scan + skip spaces | O(n) / O(1) |
+| 20  | [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | Easy | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20020/Solution.java) | Vertical scan | O(m*n) / O(1) |
+| 21  | [151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | Medium | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20021/Solution.java) | Two-pointer reverse traversal + trimming | O(n) / O(n) |
+| 22  | [6. Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/) | Medium | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20022/Solution.java) | Simulate zigzag filling rows | O(n) / O(n) |
 
 ---
 
 ## 📈 Progress Visualization
 
 ```plaintext
-Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩  (19/150)
+Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 (22/150)
 ```
 
 ---
