@@ -1,16 +1,14 @@
-# 12. Integer to Roman | Java Solution
+# 13. Roman to Integer | Java Solution
 
-[![LeetCode Problem](https://img.shields.io/badge/LeetCode-12.%20Integer%20to%20Roman-blue)](https://leetcode.com/problems/integer-to-roman/)
+[![LeetCode Problem](https://img.shields.io/badge/LeetCode-13.%20Roman%20to%20Integer-blue)](https://leetcode.com/problems/roman-to-integer/)
 [![Java](https://img.shields.io/badge/Language-Java-orange)](https://www.java.com/)
-[![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)]()
+[![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen)]()
 
 ---
 
 ## 🧩 Problem Statement  
 
-You are given an integer `num` between 1 and 3999.
-
-Convert it to a Roman numeral according to the following rules:
+Roman numerals are represented by seven different symbols:
 
 | Symbol | Value |
 |--------|-------|
@@ -22,15 +20,17 @@ Convert it to a Roman numeral according to the following rules:
 | D | 500 |
 | M | 1000 |
 
-### Special Cases (Subtractive Notation):
-- 4 → `IV` (5 - 1)  
-- 9 → `IX` (10 - 1)  
-- 40 → `XL` (50 - 10)  
-- 90 → `XC` (100 - 10)  
-- 400 → `CD` (500 - 100)  
-- 900 → `CM` (1000 - 100)  
+### Special Subtractive Cases:
+- `IV` = 4  
+- `IX` = 9  
+- `XL` = 40  
+- `XC` = 90  
+- `CD` = 400  
+- `CM` = 900  
 
-Roman numerals are written by combining symbols from highest to lowest, subtracting when necessary.
+Roman numerals are usually written from largest to smallest left to right, but for the cases above, a smaller numeral before a larger numeral means **subtraction**.
+
+Given a roman numeral string `s`, convert it to an integer.
 
 ---
 
@@ -40,13 +40,9 @@ Roman numerals are written by combining symbols from highest to lowest, subtract
 
 | Input | Output |
 |-------|--------|
-| `num = 3749` | `"MMMDCCXLIX"` |
+| `s = "III"` | `3` |
 
-**Breakdown:**  
-- `3000` = `MMM`  
-- `700` = `DCC`  
-- `40` = `XL`  
-- `9` = `IX`
+**Explanation:** `III = 1 + 1 + 1 = 3`
 
 ---
 
@@ -54,11 +50,13 @@ Roman numerals are written by combining symbols from highest to lowest, subtract
 
 | Input | Output |
 |-------|--------|
-| `num = 58` | `"LVIII"` |
+| `s = "LVIII"` | `58` |
 
-**Breakdown:**  
-- `50` = `L`  
-- `8` = `VIII`
+**Explanation:**  
+- `L` = 50  
+- `V` = 5  
+- `III` = 3  
+Total = `50 + 5 + 3 = 58`
 
 ---
 
@@ -66,28 +64,31 @@ Roman numerals are written by combining symbols from highest to lowest, subtract
 
 | Input | Output |
 |-------|--------|
-| `num = 1994` | `"MCMXCIV"` |
+| `s = "MCMXCIV"` | `1994` |
 
-**Breakdown:**  
-- `1000` = `M`  
-- `900` = `CM`  
-- `90` = `XC`  
-- `4` = `IV`
+**Explanation:**  
+- `M` = 1000  
+- `CM` = 900  
+- `XC` = 90  
+- `IV` = 4  
+Total = `1000 + 900 + 90 + 4 = 1994`
 
 ---
 
 ## ✅ Constraints  
 
-- `1 <= num <= 3999`
+- `1 <= s.length <= 15`
+- `s` contains only characters: `('I', 'V', 'X', 'L', 'C', 'D', 'M')`
+- `s` is guaranteed to be a valid Roman numeral between 1 and 3999.
 
 ---
 
 ## 💡 Approach  
 
-We use a **greedy** method:  
-- Subtract the largest possible Roman numeral value at each step.
-- Append the corresponding symbol.
-- Predefine the Roman numeral symbols and their values to map efficiently.
+- Create a **map** of Roman numeral symbols to their integer values.
+- Loop through the string:
+  - If the current symbol's value is **less** than the next symbol's value, **subtract** it.
+  - Otherwise, **add** it.
 
 ---
 
@@ -95,8 +96,8 @@ We use a **greedy** method:
 
 |                | Value |
 |----------------|-------|
-| **Time**       | `O(1)` — The loop runs a constant number of times (maximum ~13 checks) |
-| **Space**      | `O(1)` — Only a few variables and arrays of constant size |
+| **Time**       | `O(n)` — where `n` is the length of the string |
+| **Space**      | `O(1)` — only a fixed-size map and a few variables |
 
 ---
 
@@ -105,9 +106,9 @@ We use a **greedy** method:
 ```java
 public static void main(String[] args) {
     Solution sol = new Solution();
-    System.out.println(sol.intToRoman(3749)); // MMMDCCXLIX
-    System.out.println(sol.intToRoman(58));   // LVIII
-    System.out.println(sol.intToRoman(1994)); // MCMXCIV
+    System.out.println(sol.romanToInt("III"));     // 3
+    System.out.println(sol.romanToInt("LVIII"));   // 58
+    System.out.println(sol.romanToInt("MCMXCIV")); // 1994
 }
 ```
 
@@ -115,17 +116,17 @@ public static void main(String[] args) {
 
 ## ✨ Notes  
 
-- This problem perfectly fits a **greedy** strategy.
-- Predefined mappings for subtractive notation (like `CM`, `XC`, `IV`) are crucial.
-- By always matching the largest value first, we ensure the correct and shortest Roman numeral.
+- The key is identifying **when to subtract** instead of adding.
+- Whenever a smaller numeral comes **before** a larger one, subtract its value.
+- This solution leverages a **greedy** approach.
 
 ---
 
 ## 📚 Topics & Hint  
 
-**Topics:** String • Math • Greedy  
+**Topics:** Hash Table • Math • String  
 
 **Hint:**  
-> Predefine symbol-value pairs and always subtract the largest possible value.
+> Compare current and next values. If current < next, subtract current; else, add it.
 
 ---
