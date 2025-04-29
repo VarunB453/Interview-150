@@ -16,9 +16,9 @@
 
 ## 📊 Progress Tracker
 
-✅ **Solved:** **22/150** (15%)  
-⏳ **Remaining:** **128/150**  
-📅 **Current Streak:** **22 days**
+✅ **Solved:** **23/150** (15%)  
+⏳ **Remaining:** **127/150**  
+📅 **Current Streak:** **23 days**
 
 ---
 
@@ -48,13 +48,14 @@
 | 20  | [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | Easy | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20020/Solution.java) | Vertical scan | O(m*n) / O(1) |
 | 21  | [151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | Medium | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20021/Solution.java) | Two-pointer reverse traversal + trimming | O(n) / O(n) |
 | 22  | [6. Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/) | Medium | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20022/Solution.java) | Simulate zigzag filling rows | O(n) / O(n) |
+| 23  | [28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) | Easy | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20023/Solution.java) | Java `indexOf()` or manual match | O(n * m) / O(1) |
 
 ---
 
 ## 📈 Progress Visualization
 
 ```plaintext
-Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 (22/150)
+Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 (23/150)
 ```
 
 ---
@@ -69,7 +70,7 @@ Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩�
 
 ## 🌟 Upcoming Goals
 
-- Reach 30 problems by end of the month ✅
+- Reach 30 problems by the end of the month ✅
 - Add unit tests for each Java file 📦
 
----
+--- 
