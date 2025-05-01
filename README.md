@@ -16,9 +16,9 @@
 
 ## 📊 Progress Tracker
 
-✅ **Solved:** **23/150** (15%)  
-⏳ **Remaining:** **127/150**  
-📅 **Current Streak:** **23 days**
+✅ **Solved:** **24/150** (16%)  
+⏳ **Remaining:** **126/150**  
+📅 **Current Streak:** **24 days**
 
 ---
 
@@ -49,13 +49,14 @@
 | 21  | [151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | Medium | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20021/Solution.java) | Two-pointer reverse traversal + trimming | O(n) / O(n) |
 | 22  | [6. Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/) | Medium | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20022/Solution.java) | Simulate zigzag filling rows | O(n) / O(n) |
 | 23  | [28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) | Easy | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20023/Solution.java) | Java `indexOf()` or manual match | O(n * m) / O(1) |
+| 24  | [68. Text Justification](https://leetcode.com/problems/text-justification/) | Hard | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20024/Solution.java) | Greedy line packing + space distribution | O(n) / O(1) |
 
 ---
 
 ## 📈 Progress Visualization
 
 ```plaintext
-Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 (23/150)
+Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 (24/150)
 ```
 
 ---
@@ -70,7 +71,8 @@ Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩�
 
 ## 🌟 Upcoming Goals
 
-- Reach 30 problems by the end of the month ✅
-- Add unit tests for each Java file 📦
+- ✅ Reach 30 problems by the end of the month  
+- 📦 Add unit tests for each Java file  
+- 🔁 Revisit and optimize any early solutions if needed
 
---- 
+---
