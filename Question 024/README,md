@@ -1,0 +1,82 @@
+# 68. Text Justification | Java Solution
+
+[![LeetCode Problem](https://img.shields.io/badge/LeetCode-68.%20Text%20Justification-blue)](https://leetcode.com/problems/text-justification/)
+[![Java](https://img.shields.io/badge/Language-Java-orange)](https://www.java.com/)
+[![Difficulty](https://img.shields.io/badge/Difficulty-Hard-red)]()
+
+---
+
+## 🧩 Problem Statement
+
+You are given an array of strings `words` and an integer `maxWidth`. Your task is to format the text so that:
+- Each line has **exactly** `maxWidth` characters.
+- Each line is **fully justified** (both left and right).
+- The text is packed using a **greedy** strategy: fill each line with as many words as possible.
+- Spaces are distributed **evenly** between words.
+- If spaces can't be evenly distributed, **leftmost slots** get more space.
+- The **last line** should be **left-justified** and words are separated by a single space. No extra spaces between words on the last line.
+
+---
+
+## 🧠 Examples
+
+### Example 1
+
+| Input | Output |
+|-------|--------|
+| `words = ["This", "is", "an", "example", "of", "text", "justification."]`<br>`maxWidth = 16` | `[ "This    is    an", "example  of text", "justification.  " ]` |
+
+### Example 2
+
+| Input | Output |
+|-------|--------|
+| `words = ["What","must","be","acknowledgment","shall","be"]`<br>`maxWidth = 16` | `[ "What   must   be", "acknowledgment  ", "shall be        " ]` |
+
+### Example 3
+
+| Input | Output |
+|-------|--------|
+| `words = ["Science","is","what","we","understand","well","enough","to","explain","to","a","computer.","Art","is","everything","else","we","do"]`<br>`maxWidth = 20` | `[ "Science  is  what we", "understand      well", "enough to explain to", "a  computer.  Art is", "everything  else  we", "do                  " ]` |
+
+---
+
+## ✅ Constraints
+
+- `1 <= words.length <= 300`
+- `1 <= words[i].length <= 20`
+- `1 <= maxWidth <= 100`
+- `words[i].length <= maxWidth`
+
+---
+
+## 💡 Approach
+
+### 🔸 Greedy Line Building + Custom Spacing
+
+1. **Group words** into lines such that their combined length + minimum required spaces ≤ `maxWidth`.
+2. For **each line except the last**:
+   - Calculate total number of spaces.
+   - Divide them between words, starting from the left.
+3. For the **last line** or lines with a single word:
+   - Use **left-justification**.
+   - Pad remaining characters with spaces at the end.
+
+---
+
+## 🔄 Complexity Analysis
+
+|                | Value |
+|----------------|-------|
+| **Time**       | `O(n)` — where `n` is the total number of characters in `words` |
+| **Space**      | `O(1)` — apart from the output list |
+
+---
+
+## 📚 Topics & Hint
+
+**Topics:** String • Greedy
+
+**Hint:**  
+> Try to greedily fit as many words as possible into each line. Then pad the extra space by distributing it from left to right.
+
+---
