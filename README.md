@@ -16,9 +16,9 @@
 
 ## 📊 Progress Tracker
 
-✅ **Solved:** **24/150** (16%)  
-⏳ **Remaining:** **126/150**  
-📅 **Current Streak:** **24 days**
+✅ **Solved:** **26/150** (17%)
+⏳ **Remaining:** **124/150**
+📅 **Current Streak:** **26 days**
 
 ---
 
@@ -50,13 +50,16 @@
 | 22  | [6. Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/) | Medium | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20022/Solution.java) | Simulate zigzag filling rows | O(n) / O(n) |
 | 23  | [28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) | Easy | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20023/Solution.java) | Java `indexOf()` or manual match | O(n * m) / O(1) |
 | 24  | [68. Text Justification](https://leetcode.com/problems/text-justification/) | Hard | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20024/Solution.java) | Greedy line packing + space distribution | O(n) / O(1) |
+| 25  | [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)    | Easy       | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20025/Solution.java) | Two-pointer with character filtering     | O(n) / O(1) |
+| 26  | [392. Is Subsequence](https://leetcode.com/problems/is-subsequence/)        | Easy       | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20026/Solution.java) | Two-pointer character match              | O(n) / O(1) |
+
 
 ---
 
 ## 📈 Progress Visualization
 
 ```plaintext
-Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 (24/150)
+Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 (26/150)
 ```
 
 ---
