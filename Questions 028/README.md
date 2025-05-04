@@ -1,5 +1,10 @@
-## 🧠 Problem Summary
+# 11. Container With Most Water
+---
+[![LeetCode Problem](https://img.shields.io/badge/LeetCode-11.%20Container%20With%20Most%20Water-blue)](https://leetcode.com/problems/container-with-most-water/)
+[![Java](https://img.shields.io/badge/Language-Java-orange)](https://www.java.com/)
+[![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)]()
 
+---
 You are given an array `height` of non-negative integers, where each element represents the height of a vertical line drawn at that index. The goal is to find two lines that, together with the x-axis, form a container that holds the maximum amount of water.
 
 The amount of water a container can hold is determined by:
