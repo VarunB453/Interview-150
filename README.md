@@ -16,9 +16,9 @@
 
 ## 📊 Progress Tracker
 
-✅ **Solved:** **26/150** (17%)
-⏳ **Remaining:** **124/150**
-📅 **Current Streak:** **26 days**
+✅ **Solved:** **28/150** (18%)
+⏳ **Remaining:** **122/150**
+📅 **Current Streak:** **28 days**
 
 ---
 
@@ -52,6 +52,9 @@
 | 24  | [68. Text Justification](https://leetcode.com/problems/text-justification/) | Hard | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20024/Solution.java) | Greedy line packing + space distribution | O(n) / O(1) |
 | 25  | [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)    | Easy       | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20025/Solution.java) | Two-pointer with character filtering     | O(n) / O(1) |
 | 26  | [392. Is Subsequence](https://leetcode.com/problems/is-subsequence/)        | Easy       | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20026/Solution.java) | Two-pointer character match              | O(n) / O(1) |
+| 27  | [167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Medium | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20027/Solution.java) | Two-pointer from both ends | O(n) / O(1) |
+| 28  | [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Medium | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20028/Solution.java) | Two-pointer maximize area | O(n) / O(1) |
+
 
 
 ---
@@ -59,7 +62,7 @@
 ## 📈 Progress Visualization
 
 ```plaintext
-Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 (26/150)
+Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 (28/150)
 ```
 
 ---
