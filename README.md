@@ -16,11 +16,11 @@
 
 ## 📊 Progress Tracker
 
-✅ **Solved:** **28/150** (18%)
-⏳ **Remaining:** **122/150**
+✅ **Solved:** **28/150** (18%)  
+⏳ **Remaining:** **122/150**  
 📅 **Current Streak:** **28 days**
 
----
+ ---
 
 ## 📅 Daily Log
 
