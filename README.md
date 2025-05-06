@@ -16,9 +16,9 @@
 
 ## 📊 Progress Tracker
 
-✅ **Solved:** **29/150** (19%)
+✅ **Solved:** **30/150** (20%)
 
-⏳ **Remaining:** **121/150**
+⏳ **Remaining:** **120/150**
 
 📅 **Current Streak:** **29 days**
 
@@ -57,13 +57,16 @@
 | 27  | [167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)                                  | Medium     | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20027/Solution.java) | Two-pointer from both ends                | O(n) / O(1)              |
 | 28  | [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)                                                   | Medium     | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20028/Solution.java) | Two-pointer maximize area                 | O(n) / O(1)              |
 | 29  | [15. 3Sum](https://leetcode.com/problems/3sum/)                                                                                             | Medium     | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20029/Solution.java) | Sort + Two-pointer + Skip duplicates      | O(n²) / O(log n) or O(n) |
+| 30  | [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)                                                 | Medium     | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20030/Solution.java) | Sliding window (expand/shrink window)     | O(n) / O(1)              |
+
 
 ---
 
 ## 📈 Progress Visualization
 
 ```plaintext
-Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 (29/150)
+Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 (30/150)
+
 ```
 
 ---
