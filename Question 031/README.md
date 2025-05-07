@@ -1,6 +1,6 @@
-# 3341. Find Minimum Time to Reach Last Room | Java Solution
+# 3. Longest Substring Without Repeating Characters | Java Solution
 
-[![LeetCode Problem](https://img.shields.io/badge/LeetCode-3341.%20Find%20Minimum%20Time%20to%20Reach%20Last%20Room-blue)](https://leetcode.com/problems/find-minimum-time-to-reach-last-room/)
+[![LeetCode Problem](https://img.shields.io/badge/LeetCode-3.%20Longest%20Substring%20Without%20Repeating%20Characters-blue)](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 [![Language](https://img.shields.io/badge/Language-Java-orange)](https://www.java.com/)
 [![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)]()
 
@@ -8,72 +8,68 @@
 
 ## 🧩 Problem Statement
 
-You are in a dungeon with rooms arranged in a 2D grid. Each cell `(i, j)` in the grid represents a room and contains the minimum time `moveTime[i][j]` at which you are allowed to enter that room.
-
-You start at `(0, 0)` at time `0` and can move to **adjacent** rooms (up, down, left, right). Each move takes **1 second**. However, you **cannot enter** a room before its `moveTime`.
-
-Return the **minimum** time to reach the bottom-right cell `(n - 1, m - 1)`.
+Given a string `s`, find the **length of the longest substring** without repeating characters.
 
 ---
 
-## 🧠 Approach
+## 🧠 Examples
 
-This is a **shortest path** problem on a grid with **time constraints**, where:
+### Example 1
 
-* You can only enter a room at or **after** `moveTime[i][j]`.
-* Movement takes 1 second.
-* Some rooms may delay you if you arrive early.
+| Input        | Output | Explanation            |
+| ------------ | ------ | ---------------------- |
+| `"abcabcbb"` | `3`    | `"abc"` is the longest |
 
-We'll use **Dijkstra’s Algorithm** with a priority queue:
+### Example 2
 
-* Each entry in the queue is `(time, x, y)`.
-* When moving to a neighbor, you **wait** if you arrive too early.
+| Input     | Output | Explanation          |
+| --------- | ------ | -------------------- |
+| `"bbbbb"` | `1`    | `"b"` is the longest |
 
----
+### Example 3
 
-## 🔍 Complexity
-
-| Type  | Complexity              |
-| ----- | ----------------------- |
-| Time  | `O(n * m * log(n * m))` |
-| Space | `O(n * m)`              |
+| Input      | Output | Explanation            |
+| ---------- | ------ | ---------------------- |
+| `"pwwkew"` | `3`    | `"wke"` is the longest |
 
 ---
 
 ## ✅ Constraints
 
-* `2 <= n, m <= 50`
-* `0 <= moveTime[i][j] <= 10^9`
+* `0 <= s.length <= 5 * 10⁴`
+* `s` consists of English letters, digits, symbols and spaces.
 
-```
 ---
 
-## 🧪 Examples
+## 💡 Approach
 
-### Example 1
+### Sliding Window (Efficient)
 
-**Input:** `[[0,4],[4,4]]`
-**Output:** `6`
+Use two pointers to maintain a window of non-repeating characters.
 
-```
-0 → wait until 4 → move to (1,0) at 4 → (1,1) at 5
-```
+**Steps:**
 
-### Example 2
+1. Use a `HashSet` to store characters in the current window.
+2. Move the right pointer and add characters until a duplicate is found.
+3. When a duplicate is found, remove the leftmost character and shrink the window from the left.
+4. Track the maximum window size throughout.
 
-**Input:** `[[0,0,0],[0,0,0]]`
-**Output:** `3`
+---
 
-### Example 3
+## 🔍 Complexity Analysis
 
-**Input:** `[[0,1],[1,2]]`
-**Output:** `3`
+| Type  | Value                                              |
+| ----- | -------------------------------------------------- |
+| Time  | `O(n)`                                             |
+| Space | `O(min(n, m))` where `m` is the character set size |
 
 ---
 
 ## 🧵 Related Topics
 
-* Graph
-* Dijkstra's Algorithm
-* Matrix Traversal
-* Priority Queue
+* Hash Table
+* Sliding Window
+* Two Pointers
+* String
+
+---
