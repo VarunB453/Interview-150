@@ -16,11 +16,12 @@
 
 ## 📊 Progress Tracker
 
-✅ **Solved:** **30/150** (20%)
+✅ **Solved:** **31/150** (21%)
 
-⏳ **Remaining:** **120/150**
+⏳ **Remaining:** **119/150**
 
-📅 **Current Streak:** **29 days**
+📅 **Current Streak:** **31
+days**
 
 ---
 
@@ -58,6 +59,7 @@
 | 28  | [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)                                                   | Medium     | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20028/Solution.java) | Two-pointer maximize area                 | O(n) / O(1)              |
 | 29  | [15. 3Sum](https://leetcode.com/problems/3sum/)                                                                                             | Medium     | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20029/Solution.java) | Sort + Two-pointer + Skip duplicates      | O(n²) / O(log n) or O(n) |
 | 30  | [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)                                                 | Medium     | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20030/Solution.java) | Sliding window (expand/shrink window)     | O(n) / O(1)              |
+| 31  | [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium     | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20031/Solution.java) | Sliding window + HashSet                  | O(n) / O(min(n, m))      |
 
 
 ---
@@ -65,7 +67,7 @@
 ## 📈 Progress Visualization
 
 ```plaintext
-Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 (30/150)
+Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 (31/150)
 
 ```
 
