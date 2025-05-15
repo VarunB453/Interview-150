@@ -1,5 +1,5 @@
 
-36. Valid Sudoku | Java Solution
+# 36. Valid Sudoku | Java Solution
 
   
 
