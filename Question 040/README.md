@@ -1,5 +1,5 @@
-
 # 🔁 205. Isomorphic Strings
+---
 
 > 🧩 **Difficulty:** Easy
 
@@ -58,25 +58,6 @@ Explanation: p→t, a→i, p→t, e→l, r→e
 ## 💡 Your Solution (Java)
 
 Your solution uses **two hash maps** to track the **index of the last occurrence** of each character in both strings. Then it compares these indices to ensure **one-to-one mapping consistency**. 🧠🔥
-
----
-
-### 💻 Code
-
-```java
-class Solution {
-  public boolean isIsomorphic(String s, String t) {
-    Map<Character, Integer> A = new HashMap<>();
-    Map<Character, Integer> B = new HashMap<>();
-
-    for (Integer i = 0; i < s.length(); ++i)
-      if (A.put(s.charAt(i), i) != B.put(t.charAt(i), i))
-        return false;
-
-    return true;
-  }
-}
-```
 
 ---
 
