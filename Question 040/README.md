@@ -2,7 +2,9 @@
 # 🔁 205. Isomorphic Strings
 
 > 🧩 **Difficulty:** Easy
+
 > 🔗 [LeetCode Link](https://leetcode.com/problems/isomorphic-strings/)
+
 > 💬 *"Two strings are isomorphic if characters in one string can be replaced to get the other."*
 
 ---
