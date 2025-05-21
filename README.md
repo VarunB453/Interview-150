@@ -16,12 +16,11 @@
 
 ## 📊 Progress Tracker
 
-✅ **Solved:** **31/150** (21%)
+✅ **Solved:** **43/150** (29%)
 
-⏳ **Remaining:** **119/150**
+⏳ **Remaining:** **107/150**
 
-📅 **Current Streak:** **31
-days**
+📅 **Current Streak:** **43 days**
 
 ---
 
@@ -60,6 +59,18 @@ days**
 | 29  | [15. 3Sum](https://leetcode.com/problems/3sum/)                                                                                             | Medium     | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20029/Solution.java) | Sort + Two-pointer + Skip duplicates      | O(n²) / O(log n) or O(n) |
 | 30  | [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)                                                 | Medium     | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20030/Solution.java) | Sliding window (expand/shrink window)     | O(n) / O(1)              |
 | 31  | [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium     | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20031/Solution.java) | Sliding window + HashSet                  | O(n) / O(min(n, m))      |
+| 32  | [30. Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) | Hard       | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20032/Solution.java) | Sliding window with hashmap               | O(n * k) / O(n + k)      |
+| 33  | [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)                                     | Hard       | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20033/Solution.java) | Sliding window + counter map              | O(n) / O(k)              |
+| 34  | [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)                                                             | Medium     | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20034/Solution.java) | Set validation per row/col/box            | O(1) / O(1)              |
+| 35  | [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)                                                           | Medium     | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20035/Solution.java) | Layer-by-layer traversal                   | O(m*n) / O(1)            |
+| 36  | [48. Rotate Image](https://leetcode.com/problems/rotate-image/)                                                             | Medium     | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20036/Solution.java) | Transpose + reverse rows                   | O(n²) / O(1)             |
+| 37  | [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)                                                   | Medium     | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20037/Solution.java) | Mark first row/col as zero flags           | O(m*n) / O(1)            |
+| 38  | [289. Game of Life](https://leetcode.com/problems/game-of-life/)                                                            | Medium     | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20038/Solution.java) | In-place state encoding                    | O(m*n) / O(1)            |
+| 39  | [383. Ransom Note](https://leetcode.com/problems/ransom-note/)                                                              | Easy       | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20039/Solution.java) | Char count comparison                      | O(n) / O(1)              |
+| 40  | [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)                                                | Easy       | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20040/Solution.java) | HashMap mapping both directions            | O(n) / O(1)              |
+| 41  | [290. Word Pattern](https://leetcode.com/problems/word-pattern/)                                                            | Easy       | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20041/Solution.java) | HashMap + split and compare                | O(n) / O(1)              |
+| 42  | [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)                                                          | Easy       | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20042/Solution.java) | Count chars with array                     | O(n) / O(1)              |
+| 43  | [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)                                                         | Medium     | [Code](https://github.com/VarunB453/Interview-150/blob/main/Question%20043/Solution.java) | HashMap with sorted key or char count      | O(n k log k) / O(n k)    |
 
 
 ---
@@ -67,7 +78,7 @@ days**
 ## 📈 Progress Visualization
 
 ```plaintext
-Progress: 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 (31/150)
+Progress: 🟩🟩🟩🟩 (43/150)
 
 ```
 
